@@ -22,7 +22,7 @@ jobs:
         with:
           python-keyword: "3.11"
 
-      - name Install python dependencies
+      - name: Install python dependencies
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install -r requirements.txt .
