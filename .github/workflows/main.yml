@@ -20,7 +20,7 @@ jobs:
       - name: Set up python 3.11
         uses: actions/setup-python@v6
         with:
-          python-keyword: "3.11"
+          python-version: "3.11"
 
       - name: Install python dependencies
         run: |
@@ -29,5 +29,5 @@ jobs:
       
       - name: Test with pytest
         run: |
-          python3 -m pytest --cov=inflammation.models tests/test_models.pyt 
+          python3 -m pytest --cov=inflammation.models tests/test_models.py
 
